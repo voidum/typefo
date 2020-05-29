@@ -18,11 +18,12 @@ npm install --save typefo
 
 ```javascript
 const TypeFo = require('typefo');
-const typefo = new TypeFo(['fn1', 'fn2', [fn3, true]]);
+
+const typefo = new TypeFo(['fn1', 'fn2', ['fn3', true]]);
 
 // every method will lead to a Symbol
-// just keep typefo instance in lexical scope
-// then use Symbol to declare function
+// just keep typefo instance in a local lexical scope
+// then use symbols to declare functions
 const PROTECTED = typefo.symbols;
 
 class BaseClass {
@@ -31,7 +32,7 @@ class BaseClass {
     typefo.protect.call(this, BaseClass);
   }
 
-  [PRIVATE.fn1]() {
+  [PROTECTED.fn1]() {
     // nobody can access fn1 except this module
   }
 
