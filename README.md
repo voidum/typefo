@@ -65,3 +65,10 @@ next.fn2(); // => fn2, next
 next.fn3(); // => fn3
 
 ```
+
+Also `TypeFo` can be used in browser.
+
+```html
+<!-- dist/typefo.min.js -->
+<script src="typefo.min.js"></script>
+```
