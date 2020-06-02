@@ -8,6 +8,7 @@ describe('typefo', () => {
       [typefo.symbols.fn1]() {}
     }
     const test = new Test();
+    assert.notEqual(typefo.symbols.fn1, undefined);
     assert.equal(Object.keys(test).toString(), '');
     // do NOT leak your typefo instance outside
     // lexical scope will protect private symbols

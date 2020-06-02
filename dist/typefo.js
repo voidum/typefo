@@ -17,12 +17,15 @@
   function TypeFo(define) {
     // arrayify methods
     const methods = lintDefine(define);
+    // build symbols for private
+    const symbols = {};
     methods.forEach((e) => {
+      symbols[e] = Symbol(e);
     });
     const $sign = Symbol('typefo');
     return {
       [$sign]: true,
-      symbols: {},
+      symbols,
       protect: function protect(Class) {
         if (!this || this[$sign]) {
           throw new Error('your own [this] required');
