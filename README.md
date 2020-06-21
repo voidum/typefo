@@ -1,7 +1,7 @@
 # TypeFo
 
-[![Build Status](https://travis-ci.org/sartrey/typefo.svg?branch=master)](https://travis-ci.org/sartrey/typefo)
-[![Coverage Status](https://coveralls.io/repos/github/sartrey/typefo/badge.svg?branch=master)](https://coveralls.io/github/sartrey/typefo?branch=master)
+[![Build Status](https://travis-ci.org/voidum/typefo.svg?branch=master)](https://travis-ci.org/voidum/typefo)
+[![Coverage Status](https://coveralls.io/repos/github/voidum/typefo/badge.svg?branch=master)](https://coveralls.io/github/voidum/typefo?branch=master)
 
 A JavaScript class enhancement tool.
 
